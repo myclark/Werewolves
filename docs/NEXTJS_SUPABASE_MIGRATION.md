@@ -4,7 +4,6 @@
 **Migration Type:** Complete Platform Rebuild
 **From:** Meteor 1.2.1 (2015)
 **To:** Next.js 15 + Supabase + TypeScript
-**Estimated Timeline:** 8-12 weeks
 
 ---
 
@@ -293,7 +292,6 @@ Old Repo (Meteor)          New Repo (Next.js + Supabase)
 
 ## Phase 1: Project Setup
 
-**Duration:** 2-3 days
 **Goal:** Create Next.js project with TypeScript and Supabase integration
 
 ### 1.1 Create Next.js Project
@@ -586,7 +584,6 @@ export default defineConfig({
 
 ## Phase 2: Database Design
 
-**Duration:** 3-5 days
 **Goal:** Design and implement PostgreSQL schema with RLS policies
 
 ### 2.1 Setup Supabase Project
@@ -1166,7 +1163,6 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 
 ## Phase 3: Authentication
 
-**Duration:** 2-3 days
 **Goal:** Implement user authentication with Supabase Auth
 
 ### 3.1 Auth Middleware
@@ -1542,7 +1538,6 @@ export function useUserProfile() {
 
 ## Phase 4: Real-time Infrastructure
 
-**Duration:** 2-3 days
 **Goal:** Set up real-time subscriptions and presence tracking
 
 ### 4.1 Real-time Game State Hook
@@ -1906,7 +1901,6 @@ export function useBroadcast(
 
 ## Phase 5: Game Logic Migration
 
-**Duration:** 1-2 weeks
 **Goal:** Port all game logic from Meteor methods to Edge Functions and database functions
 
 ### 5.1 Type Definitions
@@ -2427,7 +2421,6 @@ async function getCurrentCycle(gameId: string): Promise<number> {
 
 ## Phase 6: UI Components
 
-**Duration:** 2-3 weeks
 **Goal:** Build React components matching original UI/UX
 
 ### 6.1 Component Architecture
@@ -2652,7 +2645,6 @@ export default function GamePage({
 
 ## Phase 7: Testing
 
-**Duration:** 1 week
 **Goal:** Comprehensive test coverage
 
 ### 7.1 Unit Tests
@@ -2683,7 +2675,6 @@ npm run test:e2e
 
 ## Phase 8: Deployment
 
-**Duration:** 2-3 days
 **Goal:** Deploy to production
 
 ### 8.1 Deploy to Vercel
@@ -2815,7 +2806,5 @@ This migration guide provides a complete roadmap from Meteor 1.2.1 to Next.js 15
 ✅ **Deployment** - Simple, automated, preview environments
 
 The migration is substantial but results in a modern, maintainable, secure application ready for production deployment and future growth.
-
-**Estimated Total Timeline:** 8-12 weeks with dedicated development
 
 Good luck with the migration! 🎉
